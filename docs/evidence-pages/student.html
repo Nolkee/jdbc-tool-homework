@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>学生表：五个方法运行结果</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:32px;background:#f2f5f8;color:#15283c;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
+main{max-width:1200px;margin:0 auto;background:white;border:1px solid #d5dee7;border-radius:14px;overflow:hidden}
+header{padding:24px 30px;background:#173a55;color:white}h1{margin:0 0 8px;font-size:25px}
+header p{margin:0;font-size:14px;color:#d4e7f6}.command{padding:18px 30px;border-bottom:1px solid #d5dee7;font:16px 'SFMono-Regular',Menlo,monospace;background:#f6f9fc}
+pre{margin:0;padding:24px 30px;font:16px/1.4 Menlo,'PingFang SC',monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+footer{padding:14px 30px;border-top:1px solid #d5dee7;font-size:13px;color:#526575}
+</style><main><header><h1>学生表：五个方法运行结果</h1><p>作业1 · JDBC工具的设计与开发 · 实际执行日志</p></header>
+<div class="command">$ java -jar target/jdbc-tool-homework-1.0.0.jar --h2 --student</div><pre>JDBC工具的设计与开发 | Maven + 反射 + JDBC
+数据库: H2 | DateTest | student、college 两张表已就绪
+本次演示编号: 73ac9005（记录保存在本地数据库）
+
+========== 学生表 Student ==========
+1. save：插入两名学生，影响行数 = 1、1
+2. resultSetToList：查询到 2 个学生对象
+   id=S73ac900501 姓名=张三 专业=软件工程 年龄=21
+   入学=2024-09-01 是否毕业=false 学费=5800.00
+   id=S73ac900502 姓名=李四 专业=计算机科学 年龄=22
+   入学=2023-09-01 是否毕业=false 学费=6000.00
+3. getOneById：按主键获取张三成功（日期、布尔、金额映射正确）
+4. update：影响行数 = 1，再次查询得到：
+   id=S73ac900501 姓名=张三 专业=人工智能 年龄=23
+   入学=2024-09-01 是否毕业=true 学费=6200.50
+5. delete：删除李四，影响行数 = 1；再次查询 = null
+[PASS] 学生表五个方法验证通过，本次演示保留 1 条记录。
+
+[PASS] 事务已提交，所选表的增删改查验证全部通过。
+</pre>
+<footer>采集时间：2026-10-02 23:40:47 +08:00 · 数据库：H2 / DateTest · 完整日志见 docs/logs/</footer></main></html>

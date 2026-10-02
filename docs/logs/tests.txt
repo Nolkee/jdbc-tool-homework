@@ -1,0 +1,24 @@
+Maven / JUnit 测试报告（从 target/surefire-reports/TEST-*.xml 读取）
+
+测试类：edu.homework.jdbc.JDBCToolTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[PASS] studentCrudRoundTripPreservesDateBooleanAndDecimal
+[PASS] emptyResultSetReturnsEmptyListAndLeavesResultSetOpen
+[PASS] updateCanReplaceExistingValuesWithSqlNull
+[PASS] sqlNullCannotSilentlyBecomePrimitiveZero
+[PASS] resultSetMapsCollegeAliasesByLabel
+[PASS] deletingOnePrimaryKeyLeavesOtherRowsUntouched
+[PASS] resultSetMapsColumnLabelsCaseInsensitivelyAndIgnoresExtraColumns
+[PASS] databaseConstraintErrorsPropagateWithoutClosingCallerConnection
+[PASS] collegeCrudRoundTrip
+[PASS] sqlLookingPrimaryKeyIsBoundForLookupUpdateAndDelete
+[PASS] sqlNullsRemainNullInStudentAndCollege
+[PASS] updateAndDeleteOfMissingRowsReturnZero
+[PASS] updatingOnePrimaryKeyLeavesOtherRowsUntouched
+[PASS] missingPrimaryKeyMetadataIsRejected
+[PASS] quoteAndSqlLookingValuesAreStoredAsData
+[PASS] callerCanRollBackSavesInItsOwnTransaction
+[PASS] nullAndBlankPrimaryKeysAreRejectedForSaveUpdateDeleteAndLookup
+
+合计：Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
