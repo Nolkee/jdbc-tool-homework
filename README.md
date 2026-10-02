@@ -26,6 +26,6 @@ java -jar target/jdbc-tool-homework-1.0.0.jar
 
 ## 提交材料
 
-[提交答案](提交答案.md) · [运行截图](docs/screenshots/) · [实现说明](docs/实现说明.md) · [验证记录](docs/验证记录.md)
+[提交答案](提交答案.md) · [运行截图](docs/screenshots/)
 
 仓库：https://github.com/Nolkee/jdbc-tool-homework

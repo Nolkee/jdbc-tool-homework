@@ -7,3 +7,5 @@ data/
 .env
 db-local.properties
 *.log
+docs/实现说明.md
+docs/验证记录.md
