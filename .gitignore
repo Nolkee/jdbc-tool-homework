@@ -7,5 +7,7 @@ data/
 .env
 db-local.properties
 *.log
-docs/实现说明.md
-docs/验证记录.md
+docs/
+提交答案.md
+提交材料包/
+本地工作材料/
