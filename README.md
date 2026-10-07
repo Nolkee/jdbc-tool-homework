@@ -24,4 +24,6 @@ java -jar target/jdbc-tool-homework-1.0.0.jar
 - `src/main/java/edu/homework/jdbc/Demo.java`：增删改查演示。
 - `sql/mysql-init.sql`：MySQL 建库建表脚本。
 
-仓库：https://github.com/Nolkee/jdbc-tool-homework
+## 说明
+
+由GPT-6.1 Sol辅助完成
